@@ -7,7 +7,6 @@ canvas.addEventListener('click', function(event) {
 
     const mouseY = event.clientY - rect.top;  // Координата Y мыши
 
-    // Преобразование координат
     let graphX = mouseX - centerX; // Относительно центра графика
     let graphY = centerY - mouseY; // Инвертируем Y координату
 
@@ -16,7 +15,6 @@ canvas.addEventListener('click', function(event) {
     let x = centerX + graphX;
     let y = centerY - graphY;
 
-    // drawPoint(x, y, "red")
 
     console.log('r, R:', r, R);
 
@@ -32,7 +30,6 @@ canvas.addEventListener('click', function(event) {
     const req = new Interaction(form);
     req.send()
 
-    // Здесь вы можете выполнить необходимые действия с полученными координатами
 });
 
 document.addEventListener('DOMContentLoaded', function() {
